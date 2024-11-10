@@ -339,11 +339,12 @@
                     </ul>
                 </div>
 
-                <div class = "subscribe-form footer-item">
+               <div class = "subscribe-form footer-item">
                     <h2>Subscribe for Newsletter!</h2>
                     <form class = "flex">
-                        <input type = "email" placeholder="Enter Email" class = "form-control">
-                        <input type = "submit" class = "btn" value = "Subscribe">
+                        <input id="tt" placeholder="Email" type="text" class="form-control"><br>
+                        <label id="lbtext" style="color:red;visibility:hidden;">Invalid</label><br>
+                        <button onclick="validate()" type="button" class="btn">Subscribe</button>
                     </form>
                 </div>
             </div>
