@@ -36,3 +36,21 @@ window.addEventListener('resize', () => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 });
+function validate(){
+    var text = document.getElementById("tt").value;
+
+    var regx = /^[a-zA-Z0-_9]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,6}/;
+        if(regx.test(text)){
+
+            document.getElementById("lbtext").innerHTML= "Valid";
+            document.getElementById('lbtext').style.visibility = "visible";
+            document.getElementById("lbtext").style.color = "green";
+        }
+        else{
+
+            document.getElementById("lbtext").innerHTML = "Invalid";
+            document.getElementById("lbtext").style.visibility = "visible";
+            document.getElementById("lbtext").style.color= "red";
+        }
+       
+}
